@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="136.98 212.81 197.97 188.28" preserveAspectRatio="xMidYMid" width="100%" height="100%">
+    <clipPath id="226">
+        <rect x="0.665" y="0.665" width="538.67" height="718.42" />
+    </clipPath>
+    <g id="drawing">
+        <rect x="136.98" y="212.81" width="100%" height="100%" fill="rgba(255, 255, 255,0)" />
+        <g id="page" clip-path="url(#226)">
+            <g id="Solid">
+                <path d="M155.88 248.77 L155.88 248.77 L156.55 249.25 L157.22 249.73 L157.22 280.67 L156.55 281.15 L155.89 280.93 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M156.8 281.93 L156.8 281.93 L156.55 281.15 L157.22 280.67 L186.63 290.22 L186.88 291 L186.22 291.48 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M187.55 291.22 L187.55 291.22 L186.88 291 L186.63 290.22 L204.81 265.2 L205.63 265.2 L206.04 265.77 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M205.88 264.42 L205.88 264.42 L205.63 265.2 L204.81 265.2 L186.63 240.18 L186.88 239.4 L187.7 239.4 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M186.47 238.83 L186.47 238.83 L186.88 239.4 L186.63 240.18 L157.22 249.73 L156.55 249.25 L155.88 248.77 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M206.04 265.77 L206.04 265.77 L205.63 265.2 L205.88 264.42 L235.31 254.86 L235.97 255.34 L235.97 256.04 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M236.64 254.86 L236.64 254.86 L235.97 255.34 L235.31 254.86 L235.31 223.93 L235.97 223.45 L236.64 223.93 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M235.97 222.75 L235.97 222.75 L235.97 223.45 L235.31 223.93 L205.88 214.37 L205.63 213.59 L205.38 212.81 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M205.38 212.81 L205.38 212.81 L205.63 213.59 L205.88 214.37 L187.7 239.4 L186.88 239.4 L186.47 238.83 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M235.97 256.04 L235.97 256.04 L235.97 255.34 L236.64 254.86 L266.05 264.42 L266.3 265.2 L265.89 265.77 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M267.12 265.2 L267.12 265.2 L266.3 265.2 L266.05 264.42 L284.23 239.4 L285.05 239.4 L285.3 240.18 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M285.46 238.83 L285.46 238.83 L285.05 239.4 L284.23 239.4 L266.05 214.37 L266.3 213.59 L266.55 212.81 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M266.55 212.81 L266.55 212.81 L266.3 213.59 L266.05 214.37 L236.64 223.93 L235.97 223.45 L235.97 222.75 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M265.89 265.77 L265.89 265.77 L266.3 265.2 L267.12 265.2 L285.3 290.22 L285.05 291 L284.39 291.22 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M285.72 291.48 L285.72 291.48 L285.05 291 L285.3 290.22 L314.72 280.67 L315.38 281.15 L315.13 281.93 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M316.05 280.93 L316.05 280.93 L315.38 281.15 L314.72 280.67 L314.72 249.73 L315.38 249.25 L316.04 248.77 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M316.04 248.77 L316.04 248.77 L315.38 249.25 L314.72 249.73 L285.3 240.18 L285.05 239.4 L285.46 238.83 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M284.39 291.22 L284.39 291.22 L285.05 291 L285.72 291.48 L285.72 322.42 L285.05 322.9 L284.39 322.68 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M285.3 323.68 L285.3 323.68 L285.05 322.9 L285.72 322.42 L315.13 331.98 L315.38 332.76 L314.72 333.24 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M316.05 332.98 L316.05 332.98 L315.38 332.76 L315.13 331.98 L333.31 306.95 L334.13 306.95 L334.95 306.95 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M334.95 306.95 L334.95 306.95 L334.13 306.95 L333.31 306.95 L315.13 281.93 L315.38 281.15 L316.05 280.93 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M284.39 322.68 L284.39 322.68 L285.05 322.9 L285.3 323.68 L267.12 348.7 L266.3 348.7 L265.89 348.13 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M266.05 349.48 L266.05 349.48 L266.3 348.7 L267.12 348.7 L285.3 373.73 L285.05 374.51 L284.23 374.51 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M285.46 375.08 L285.46 375.08 L285.05 374.51 L285.3 373.73 L314.72 364.17 L315.38 364.65 L316.04 365.13 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M316.04 365.13 L316.04 365.13 L315.38 364.65 L314.72 364.17 L314.72 333.24 L315.38 332.76 L316.05 332.98 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M265.89 348.13 L265.89 348.13 L266.3 348.7 L266.05 349.48 L236.64 359.04 L235.97 358.56 L235.97 357.86 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M235.31 359.04 L235.31 359.04 L235.97 358.56 L236.64 359.04 L236.64 389.98 L235.97 390.46 L235.31 389.98 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M235.97 391.16 L235.97 391.16 L235.97 390.46 L236.64 389.98 L266.05 399.53 L266.3 400.31 L266.55 401.09 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M266.55 401.09 L266.55 401.09 L266.3 400.31 L266.05 399.53 L284.23 374.51 L285.05 374.51 L285.46 375.08 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M235.97 357.86 L235.97 357.86 L235.97 358.56 L235.31 359.04 L205.88 349.48 L205.63 348.7 L206.04 348.13 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M204.81 348.7 L204.81 348.7 L205.63 348.7 L205.88 349.48 L187.7 374.51 L186.88 374.51 L186.63 373.73 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M186.47 375.08 L186.47 375.08 L186.88 374.51 L187.7 374.51 L205.88 399.53 L205.63 400.31 L205.38 401.09 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M205.38 401.09 L205.38 401.09 L205.63 400.31 L205.88 399.53 L235.31 389.98 L235.97 390.46 L235.97 391.16 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M206.04 348.13 L206.04 348.13 L205.63 348.7 L204.81 348.7 L186.63 323.68 L186.88 322.9 L187.55 322.68 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M186.22 322.42 L186.22 322.42 L186.88 322.9 L186.63 323.68 L157.22 333.24 L156.55 332.76 L156.8 331.98 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M155.89 332.98 L155.89 332.98 L156.55 332.76 L157.22 333.24 L157.22 364.17 L156.55 364.65 L155.88 365.13 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M155.88 365.13 L155.88 365.13 L156.55 364.65 L157.22 364.17 L186.63 373.73 L186.88 374.51 L186.47 375.08 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M187.55 322.68 L187.55 322.68 L186.88 322.9 L186.22 322.42 L186.22 291.48 L186.88 291 L187.55 291.22 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M155.89 280.93 L155.89 280.93 L156.55 281.15 L156.8 281.93 L138.62 306.95 L137.8 306.95 L136.98 306.95 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+            <g id="Solid">
+                <path d="M136.98 306.95 L136.98 306.95 L137.8 306.95 L138.62 306.95 L156.8 331.98 L156.55 332.76 L155.89 332.98 Z" stroke="#61DAFB" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="miter" fill="#61DAFB" shape-rendering="geometricPrecision" />
+            </g>
+        </g>
+    </g>
+</svg>
