@@ -1,109 +1,88 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 import './app.css'
 
-function Square(props) {
-    return (
-        <button className="square" onClick={props.onClick}>
-            {props.value}
-        </button>
-    );
-}
-function calculateWinner(squares) {
-    const lines = [
-        [0, 1, 2],
-        [3, 4, 5],
-        [6, 7, 8],
-        [0, 3, 6],
-        [1, 4, 7],
-        [2, 5, 8],
-        [0, 4, 8],
-        [2, 4, 6],
-    ];
-    for (let i = 0; i < lines.length; i++) {
-        const [a, b, c] = lines[i];
-        if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-            return squares[a];
-        }
-    }
- 
-    return null;
-}
 
-class Board extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            squares: Array(9).fill(null),
-            xIsNext: true,
-        };
-    }
-    renderSquare(i) {
-        return <Square value={this.state.squares[i]} onClick={() => this.handleClick(i)} />;
-    }
-
-    render() {
-        const winner = calculateWinner(this.state.squares);
-        let status;
-        if (winner) {
-            status = 'Winner: ' + winner;
-        } else {
-            status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+var Likebutton =React.createClass({
+    componentWillReceiveProps:function(nextPorops){       
+        console.log("this only exist in child componet, During the Page runing ")
+    },
+    getInitialState:function(){
+        return{
+            liked:false
         }
-
-        return (
-            <div>
-                <div className="status">{status}</div>
-                <div className="board-row">
-                    {this.renderSquare(0)}
-                    {this.renderSquare(1)}
-                    {this.renderSquare(2)}
-                </div>
-                <div className="board-row">
-                    {this.renderSquare(3)}
-                    {this.renderSquare(4)}
-                    {this.renderSquare(5)}
-                </div>
-                <div className="board-row">
-                    {this.renderSquare(6)}
-                    {this.renderSquare(7)}
-                    {this.renderSquare(8)}
-                </div>
-            </div>
-        );
-    }
-    handleClick(i) {
-        const squares = this.state.squares.slice();
-        if (calculateWinner(squares) || squares[i]) {
-            return;
-        }
-        squares[i] = this.state.xIsNext ? 'X' : 'O';
+    },
+    handleClick:function(){
+        this.props.onClick()
         this.setState({
-            squares: squares,
-            xIsNext: !this.state.xIsNext,
-        });
-    }
-}
-
-class Game extends React.Component {
-    render() {
+            liked:true
+        })
+    },
+    render:function(){
+        console.log("Child component Rendering")
         return (
-            <div className="game">
-                <div className="game-board">
-                    <Board />
-                </div>
-                <div className="game-info">
-                    <div>{/* status */}</div>
-                    <ol>{/* TODO */}</ol>
-                </div>
-            </div>
-        );
+            <div><button onClick ={this.handleClick} className="mybutton">Like</button></div>
+        )
     }
-}
+    
+})
+var Lifecyle =React.createClass({
+    getDefaultProps:function(){
+        console.log("Here is the LifeCyle of init React component")
+        console.log('1st-step-- getDefaultProps, Get Default Props from parent Node');
+        return {
+            name :'nodeBook'
+        }
+    },
+    getInitialState:function(){
+        console.log('2nd-step-- getInitialState, Get Or Set up component initial or default state');
+        return {
+            like:0
+        }
+    },
+    addLikes:function(){
+        this.setState({
+            like :this.state.like+1
+        });
+    },
+    componentWillMount:function(){
+        console.log('3rd-step-- componentWillMount, Before Render, you can Change your state, e.g. here, I set the default Like =100');
+        this.setState({
+            like :this.state.like+100
+        })
+    }, 
+    render:function(){
+        console.log('4th-step-- render, Here We go, Render in the Virtual DOM');
+        console.log("Rendering Rendering");
+        return(
+        <div>
+            <p><strong>This File is put here to let you understand the Life Cyle of React, Please press F12 to see the log lines</strong></p>
+            <h2>Here I have create a Child component, to involve other lifecyle functions</h2>
+            <h4>Hello {this.props.name},</h4>
+            <h4> Your Name is Awesome, there are {this.state.like} Likes</h4>
+            <Likebutton onClick={this.addLikes}/>
+        </div>
+        )
+    },
+    componentDidMount:function(){
+        console.log('5th-step-- componentDidMount, after you have render in the Virtual DOM, you could doing someting here')
+    },
+    shouldComponentUpdate:function(nextPorops,nextState){ 
+        console.log("During the Page Runing, this is the 1st step. which checked the state and props, just checking, can not modify them"); 
+        //this step is always used to check up the Username or other things 
+        return nextPorops.name===this.props.name;
+    },
+    componentWillUpdate:function(){
+          console.log("During the Page Runing, this is the 2nd step, this component will update")
+    },
+    componentDidUpdate:function(){
+         console.log("During the Page Runing, this is the 4th step, this component has updated")
+    },
+    componentWillUnmount:function(){
+        console.log("this componet is being Destroyed")
+    }
+})
 
-// ========================================
-
-ReactDOM.render(
-    <Game />,
-    document.getElementById('root')
-);
+ReactDOM.render(<Lifecyle/>,document.getElementById('root'),function(){
+    console.log('6th-step--ReacDOM.render, this is the last Step, to Render Element in the real DOM tree')
+})
