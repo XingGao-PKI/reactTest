@@ -8,34 +8,21 @@ var Likebutton =React.createClass({
         console.log("this only exist in child componet, During the Page runing ")
     },
     getInitialState:function(){
-        return {
+        return{
             liked:false
         }
     },
     handleClick:function(){
-        if(this.state.liked){
-            this.props.disLikeHandle();
-            this.setState({
-                liked:false
-            })
-        }else{
-            this.props.likeHandle();
-            this.setState({
-                liked:true
-            })
-        }
+        this.props.onClick()
+        this.setState({
+            liked:true
+        })
     },
     render:function(){
         console.log("Child component Rendering")
-         if(!this.state.liked)
-            return (           
-                <div><button onClick ={this.handleClick} className="mybutton">Like</button></div>
-            )
-        else{
-            return(
-                <div><button onClick ={this.handleClick} className="mybutton">disLike</button></div>
-            )
-        }
+        return (
+            <div><button onClick ={this.handleClick} className="mybutton">Like</button></div>
+        )
     }
     
 })
@@ -58,11 +45,6 @@ var Lifecyle =React.createClass({
             like :this.state.like+1
         });
     },
-    reomveLikes:function(){
-        this.setState({
-            like :this.state.like-1
-        });
-    },
     componentWillMount:function(){
         console.log('3rd-step-- componentWillMount, Before Render, you can Change your state, e.g. here, I set the default Like =100');
         this.setState({
@@ -78,7 +60,7 @@ var Lifecyle =React.createClass({
             <h2>Here I have create a Child component, to involve other lifecyle functions</h2>
             <h4>Hello {this.props.name},</h4>
             <h4> Your Name is Awesome, there are {this.state.like} Likes</h4>
-            <Likebutton likeHandle={this.addLikes} disLikeHandle={this.removeLikes}/>
+            <Likebutton onClick={this.addLikes}/>
         </div>
         )
     },
@@ -100,6 +82,7 @@ var Lifecyle =React.createClass({
         console.log("this componet is being Destroyed")
     }
 })
+
 ReactDOM.render(<Lifecyle/>,document.getElementById('root'),function(){
     console.log('6th-step--ReacDOM.render, this is the last Step, to Render Element in the real DOM tree')
 })
