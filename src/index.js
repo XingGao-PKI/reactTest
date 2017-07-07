@@ -1,109 +1,49 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './app.css'
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-function Square(props) {
-    return (
-        <button className="square" onClick={props.onClick}>
-            {props.value}
-        </button>
-    );
-}
-function calculateWinner(squares) {
-    const lines = [
-        [0, 1, 2],
-        [3, 4, 5],
-        [6, 7, 8],
-        [0, 3, 6],
-        [1, 4, 7],
-        [2, 5, 8],
-        [0, 4, 8],
-        [2, 4, 6],
-    ];
-    for (let i = 0; i < lines.length; i++) {
-        const [a, b, c] = lines[i];
-        if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-            return squares[a];
+var Lifecyle =React.createClass({
+    getDefaultProps:function(){
+        console.log("Here is the LifeCyle of init React component")
+        console.log('1st-step-- getDefaultProps, Get Default Props from parent Node');
+        return {
+            name :'nodeBook'
         }
-    }
- 
-    return null;
-}
-
-class Board extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            squares: Array(9).fill(null),
-            xIsNext: true,
-        };
-    }
-    renderSquare(i) {
-        return <Square value={this.state.squares[i]} onClick={() => this.handleClick(i)} />;
-    }
-
-    render() {
-        const winner = calculateWinner(this.state.squares);
-        let status;
-        if (winner) {
-            status = 'Winner: ' + winner;
-        } else {
-            status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+    },
+    getInitialState:function(){
+        console.log('2nd-step-- getInitialState, Get Or Set up component initial or default state');
+        return {
+            like:0
         }
-
-        return (
-            <div>
-                <div className="status">{status}</div>
-                <div className="board-row">
-                    {this.renderSquare(0)}
-                    {this.renderSquare(1)}
-                    {this.renderSquare(2)}
-                </div>
-                <div className="board-row">
-                    {this.renderSquare(3)}
-                    {this.renderSquare(4)}
-                    {this.renderSquare(5)}
-                </div>
-                <div className="board-row">
-                    {this.renderSquare(6)}
-                    {this.renderSquare(7)}
-                    {this.renderSquare(8)}
-                </div>
-            </div>
-        );
-    }
-    handleClick(i) {
-        const squares = this.state.squares.slice();
-        if (calculateWinner(squares) || squares[i]) {
-            return;
-        }
-        squares[i] = this.state.xIsNext ? 'X' : 'O';
+    },
+    addLikes:function(){
         this.setState({
-            squares: squares,
-            xIsNext: !this.state.xIsNext,
-        });
+            like :this.state.like+1
+        })
+    },
+    componentWillMount:function(){
+        console.log('3rd-step-- componentWillMount, Before Render, you can Change your state, e.g. here, I set the default Like =100')
+        this.setState({
+            like :this.state.like+100
+        })
+    }, 
+    render:function(){
+        console.log('4th-step-- render, Here We go, Render in the Virtual DOM')
+
+        return(
+        <div>
+            <p><strong>This File is put here to let you understand the Life Cyle of React, Please press F12 to see the log lines</strong></p>
+            <h4>Hello {this.props.name},</h4>
+            <h4> Your Name is Awesome, there are {this.state.like} Likes</h4>
+            <p><button onClick ={this.addLikes}>Like</button></p>
+        </div>
+        )
+    },
+    componentDidMount:function(){
+        console.log('5th-step-- componentDidMount, after you have render in the Virtual DOM, you could doing someting here')
     }
-}
 
-class Game extends React.Component {
-    render() {
-        return (
-            <div className="game">
-                <div className="game-board">
-                    <Board />
-                </div>
-                <div className="game-info">
-                    <div>{/* status */}</div>
-                    <ol>{/* TODO */}</ol>
-                </div>
-            </div>
-        );
-    }
-}
+})
 
-// ========================================
-
-ReactDOM.render(
-    <Game />,
-    document.getElementById('root')
-);
+ReactDOM.render(<Lifecyle/>,document.getElementById('root'),function(){
+    console.log('6th-step--ReacDOM.render, this is the last Step, to Render Element in the real DOM tree')
+})
